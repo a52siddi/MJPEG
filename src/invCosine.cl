@@ -155,43 +155,43 @@ void idct_1D(int *Y);
 
 __kernel void IDCT(__global int* input, __global uchar* output) 
 {
+//unsigned int kid= get_global_id(0);
 
-unsigned int kid= get_global_id(0);
+    __local int Y[64]; 
+    int k= get_global_id(0);
+    int l;
+    int lid= get_global_id(1);
+    __local int Yc[8];
+    
+   if (k < 8)
+    {
+        for (l = 0; l < 8; l++) 
+        
+     {
+     Y(k, l) = SCALE(input[(k << 3) + l], S_BITS);
+     }
+        idct_1D(&Y(k, 0));
+    }
 
-    int Y[64]; 
-	int k,l;
-	int Yc[8];
-	
-		if (kid < 8)
-{
-		for (l = 0; l < 8; l++)
-		{
+    if (lid < 8)
+    {
+        
+        for (k = 0; k < 8; k++)
+    {
+            Yc[k] = Y(k, lid);
+    }
 
-		Y(kid,l) = SCALE(input[(kid << 3) + l], S_BITS);	
-		
-		}			
-		idct_1D(&Y(kid,0));
-	   
-}
+        idct_1D(Yc);
 
-	if (kid < 8)
-	{
-	
-	for (k = 0; k < 8; k++)
-			{Yc[k] = Y(k, kid);}
-	
+        for (k = 0; k < 8; k++)
+        {
+            int r = 128 + DESCALE(Yc[k], S_BITS + 3);
+            r = r > 0 ? (r < 255 ? r : 255) : 0;
+            X(k, lid) = r;
+        }
 
-		idct_1D(Yc);
+    }
 
-         for (k = 0; k < 8; k++)
-		{
-		
-			int r = 128 + DESCALE(Yc[k], S_BITS + 3);
-			r = r > 0 ? (r < 255 ? r : 255) : 0;
-			X(k, kid) = r;
-		}
-		
-	}
 }
 
 void idct_1D(int *Y) 
