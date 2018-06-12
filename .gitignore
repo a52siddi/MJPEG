@@ -1,0 +1,6 @@
+gmon.out
+.svn
+src/*.o
+callgrind.out*
+mire
+mjpeg

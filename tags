@@ -1,0 +1,233 @@
+ADD	src/idct.c	/^static inline int32_t ADD(int32_t x, int32_t y)$/
+APRINTF	include/define_common.h	/^#define APRINTF(format, ...) printf (format, ## __/
+APRINTF	include/define_common.h	/^#define APRINTF(format, ...)$/
+ARITH_BITS	src/idct.c	54
+ARITH_MAX	src/idct.c	66
+ARITH_MIN	src/idct.c	60
+BAD_LEAF_FLAG	include/jpeg.h	81
+BLACK	example/example.c	19
+BLACK	example/example.c	25
+BLUE	example/example.c	16
+BLUE	example/example.c	22
+CMUL	src/idct.c	/^static inline int32_t CMUL(int32_t c, int32_t x)$/
+COPY_SECTION	include/define_common.h	/^#define COPY_SECTION(to, size) {		\\$/
+CPU_DATA_IS_BIGENDIAN	include/define_common.h	/^#define CPU_DATA_IS_BIGENDIAN(type,data) SWITCH_EN/
+C_BITS	src/idct.c	78
+ClipRect	src/screen.c	15
+DEBUG	src/screen.c	12
+DEFINE_COMMON_H	include/define_common.h	2
+DESCALE	src/idct.c	/^static inline int32_t DESCALE (int32_t x, int32_t /
+DHT_section_t	include/jpeg.h	153
+DQT_section_t	include/jpeg.h	131
+FILE_ERROR	include/define_common.h	/^#define FILE_ERROR(file, msg, expected, actual) \\$/
+GOOD_LEAF_FLAG	include/jpeg.h	80
+GOOD_NODE_FLAG	include/jpeg.h	79
+GREEN	example/example.c	17
+GREEN	example/example.c	23
+G_ZZ	include/define_common.h	63
+G_ZZ	src/iqzz.c	12
+HUFF_AC	include/jpeg.h	15
+HUFF_DC	include/jpeg.h	14
+HUFF_EOB	include/jpeg.h	16
+HUFF_FLAG	include/jpeg.h	/^#define HUFF_FLAG(c)            ((c) & HUFF_FLAG_M/
+HUFF_FLAG_MSK	include/jpeg.h	83
+HUFF_VALUE	include/jpeg.h	/^#define HUFF_VALUE(c)           ((unsigned char)( /
+HUFF_ZRL	include/jpeg.h	17
+HV	include/jpeg.h	135
+IDCT	include/idct.h	/^extern void IDCT(int32_t *input, uint8_t *output);/
+IDCT	src/idct.c	/^void IDCT(int32_t *input, uint8_t *output) {$/
+IDCT_INT_MAX	src/idct.c	16
+IDCT_INT_MIN	src/idct.c	15
+IPRINTF	include/define_common.h	/^#define IPRINTF(format, ...) printf ("[%s] " forma/
+IPRINTF	include/define_common.h	/^#define IPRINTF(format, ...)$/
+MAX_SIZE	include/jpeg.h	/^#define MAX_SIZE(class) ((class)?162:14)        \/*/
+MCU_sx	include/jpeg.h	11
+MCU_sy	include/jpeg.h	12
+M_APP0	include/jpeg.h	53
+M_APP1	include/jpeg.h	54
+M_APP10	include/jpeg.h	63
+M_APP11	include/jpeg.h	64
+M_APP12	include/jpeg.h	65
+M_APP13	include/jpeg.h	66
+M_APP14	include/jpeg.h	67
+M_APP15	include/jpeg.h	68
+M_APP2	include/jpeg.h	55
+M_APP3	include/jpeg.h	56
+M_APP4	include/jpeg.h	57
+M_APP5	include/jpeg.h	58
+M_APP6	include/jpeg.h	59
+M_APP7	include/jpeg.h	60
+M_APP8	include/jpeg.h	61
+M_APP9	include/jpeg.h	62
+M_COM	include/jpeg.h	71
+M_DAC	include/jpeg.h	33
+M_DHP	include/jpeg.h	51
+M_DHT	include/jpeg.h	25
+M_DNL	include/jpeg.h	49
+M_DQT	include/jpeg.h	48
+M_DRI	include/jpeg.h	50
+M_EOI	include/jpeg.h	46
+M_ERROR	include/jpeg.h	73
+M_EXP	include/jpeg.h	52
+M_JPG	include/jpeg.h	29
+M_JPG0	include/jpeg.h	69
+M_JPG13	include/jpeg.h	70
+M_MARKER	include/jpeg.h	/^#define M_MARKER(m)             (0xff << 8 | m)$/
+M_RST0	include/jpeg.h	37
+M_RST1	include/jpeg.h	38
+M_RST2	include/jpeg.h	39
+M_RST3	include/jpeg.h	40
+M_RST4	include/jpeg.h	41
+M_RST5	include/jpeg.h	42
+M_RST6	include/jpeg.h	43
+M_RST7	include/jpeg.h	44
+M_SMS	include/jpeg.h	74
+M_SOF0	include/jpeg.h	21
+M_SOF1	include/jpeg.h	22
+M_SOF10	include/jpeg.h	31
+M_SOF11	include/jpeg.h	32
+M_SOF13	include/jpeg.h	34
+M_SOF14	include/jpeg.h	35
+M_SOF15	include/jpeg.h	36
+M_SOF2	include/jpeg.h	23
+M_SOF3	include/jpeg.h	24
+M_SOF5	include/jpeg.h	26
+M_SOF6	include/jpeg.h	27
+M_SOF7	include/jpeg.h	28
+M_SOF9	include/jpeg.h	30
+M_SOI	include/jpeg.h	45
+M_SOS	include/jpeg.h	47
+M_TEM	include/jpeg.h	72
+Mexample	example/example.c	/^int main(int argc, char *argv[])$/
+Mmain	src/main.c	/^int main(int argc, char *argv[])$/
+NEXT_TOKEN	include/define_common.h	/^#define NEXT_TOKEN(res) {                         /
+RED	example/example.c	18
+RED	example/example.c	24
+SCALE	src/idct.c	/^#define SCALE(x,n)      ((x) << (n))$/
+SKIP	include/define_common.h	/^#define SKIP(n) {                                 /
+SOF_component_t	include/jpeg.h	137
+SOF_section_t	include/jpeg.h	145
+SOS_component_t	include/jpeg.h	158
+SOS_section_t	include/jpeg.h	163
+SPECIAL_FLAG	include/jpeg.h	82
+SUB	src/idct.c	/^static inline int32_t SUB(int32_t x, int32_t y)$/
+SWITCH_ENDIAN_16	include/define_common.h	/^#define SWITCH_ENDIAN_16(x) \\$/
+SWITCH_ENDIAN_32	include/define_common.h	/^#define SWITCH_ENDIAN_32(x)   \\$/
+S_BITS	src/idct.c	72
+UNSUPPORTED_MARKER	include/jpeg.h	/^#define UNSUPPORTED_MARKER(m) printf("marker 0x%04/
+UPSAMPLER_H	include/upsampler.h	5
+VPRINTF	include/define_common.h	/^#define VPRINTF(format, ...) printf ("[%s] " forma/
+VPRINTF	include/define_common.h	/^#define VPRINTF(format, ...)$/
+WHITE	example/example.c	15
+WHITE	example/example.c	21
+X	src/idct.c	/^#define X(i,j)          (output[(i << 3) + j])$/
+Y	src/idct.c	/^#define Y(i,j)          Y[(i << 3) + j]$/
+YCbCr_to_ARGB	include/conv.h	/^extern void YCbCr_to_ARGB(uint8_t  *YCbCr_MCU[3], /
+YCbCr_to_ARGB	src/conv.c	/^void YCbCr_to_ARGB(uint8_t *YCbCr_MCU[3], uint32_t/
+__CONV_H__	include/conv.h	5
+__HUFFMAN_H	include/huffman.h	5
+__IDCT_H	include/idct.h	5
+__IQZZ_H	include/iqzz.h	5
+__JPEG_H__	include/jpeg.h	5
+__SCREEN_H__	include/screen.h	5
+__SKIP_SEGMENT_H	include/skip_segment.h	5
+__UNPACK_BLOCK_H	include/unpack_block.h	5
+__UTILS_H__	include/utils.h	6
+_huff_table_t	include/jpeg.h	92
+_scan_desc_t	include/jpeg.h	101
+acdc	include/jpeg.h	157
+bit_count	include/jpeg.h	102
+but	src/idct.c	/^#define but(a,b,x,y)    { x = SUB(a,b); y = ADD(a,/
+c0_1	src/idct.c	26
+c0_s2	src/idct.c	27
+c1_1	src/idct.c	28
+c1_s2	src/idct.c	29
+c2_1	src/idct.c	30
+c2_s2	src/idct.c	31
+c3_1	src/idct.c	32
+c3_s2	src/idct.c	33
+c4_1	src/idct.c	34
+c4_s2	src/idct.c	35
+c5_1	src/idct.c	36
+c5_s2	src/idct.c	37
+c6_1	src/idct.c	38
+c6_s2	src/idct.c	39
+c7_1	src/idct.c	40
+c7_s2	src/idct.c	41
+c8_1	src/idct.c	42
+c8_s2	src/idct.c	43
+code	include/jpeg.h	93
+data_precision	include/jpeg.h	141
+find_location	src/huffman.c	/^huff_table_t *find_location(huff_table_t *root, ui/
+free_huffman_tables	include/huffman.h	/^extern void free_huffman_tables(huff_table_t *root/
+free_huffman_tables	src/huffman.c	/^void free_huffman_tables(huff_table_t *root) {$/
+get_bits	src/unpack_block.c	/^uint32_t get_bits(FILE * movie, scan_desc_t * scan/
+get_symbol	src/unpack_block.c	/^uint8_t get_symbol(FILE * movie, scan_desc_t * sca/
+global_framerate	src/screen.c	19
+height	include/jpeg.h	142
+huff_info	include/jpeg.h	149
+huff_table_t	include/jpeg.h	99
+idct_1d	src/idct.c	/^static inline void idct_1d(int32_t *Y) {$/
+identifier	include/jpeg.h	119
+index	include/jpeg.h	134
+index	include/jpeg.h	156
+initialized	src/screen.c	18
+intceil	include/utils.h	/^static inline int32_t intceil (int32_t N, int32_t /
+intfloor	include/utils.h	/^static inline int32_t intfloor (int32_t N, int32_t/
+iqzz_block	include/iqzz.h	/^extern void iqzz_block( int32_t in[64], int32_t ou/
+iqzz_block	src/iqzz.c	/^void iqzz_block(int32_t in[64], int32_t out[64],$/
+is_elt	include/jpeg.h	95
+jfif_header_t	include/jpeg.h	126
+jpeg_marker_t	include/jpeg.h	88
+left	include/jpeg.h	97
+length	include/jpeg.h	118
+length	include/jpeg.h	129
+length	include/jpeg.h	140
+length	include/jpeg.h	148
+length	include/jpeg.h	161
+load_huffman_table	include/huffman.h	/^extern int load_huffman_table(FILE *movie, huff_ta/
+load_huffman_table	src/huffman.c	/^int load_huffman_table(FILE * movie, huff_table_t /
+load_huffman_table_size	include/huffman.h	/^extern int load_huffman_table_size(FILE *movie,$/
+load_huffman_table_size	src/huffman.c	/^int load_huffman_table_size(FILE * movie,$/
+n	include/jpeg.h	144
+n	include/jpeg.h	162
+old_time	src/screen.c	22
+parent	include/jpeg.h	96
+pre_quant	include/jpeg.h	130
+pred	include/jpeg.h	104
+q_table	include/jpeg.h	136
+reformat	include/utils.h	/^static inline int32_t reformat (uint32_t S, int32_/
+right	include/jpeg.h	98
+rot	src/idct.c	/^static inline void rot(int32_t f, int32_t k, int32/
+scan_desc_t	include/jpeg.h	106
+screen	src/screen.c	14
+screen_cpyrect	include/screen.h	/^extern void screen_cpyrect( uint32_t x, uint32_t y/
+screen_cpyrect	src/screen.c	/^void screen_cpyrect(uint32_t x, uint32_t y, uint32/
+screen_exit	include/screen.h	/^extern int screen_exit();$/
+screen_exit	src/screen.c	/^int screen_exit()$/
+screen_init	include/screen.h	/^extern void screen_init(uint32_t width, uint32_t h/
+screen_init	src/screen.c	/^void screen_init(uint32_t width, uint32_t height, /
+screen_refresh	include/screen.h	/^extern int screen_refresh();$/
+screen_refresh	src/screen.c	/^int screen_refresh()$/
+segment_size	src/skip_segment.c	15
+size	src/skip_segment.c	16
+skip_segment	include/skip_segment.h	/^extern void skip_segment(FILE *movie);$/
+skip_segment	src/skip_segment.c	/^void skip_segment(FILE * movie)$/
+sqrt2	src/idct.c	44
+table	include/jpeg.h	105
+to_NB	include/conv.h	/^extern void to_NB(uint8_t  *YCbCr_MCU[3], uint32_t/
+to_NB	src/conv.c	/^void to_NB(uint8_t  *YCbCr_MCU[3], uint32_t *RGB_M/
+units	include/jpeg.h	121
+unpack_block	include/unpack_block.h	/^extern void unpack_block(FILE *movie, scan_desc_t /
+unpack_block	src/unpack_block.c	/^void unpack_block(FILE * movie, scan_desc_t * scan/
+upsampler	include/upsampler.h	/^extern void upsampler(uint8_t *MCU_ds, uint8_t *MC/
+upsampler	src/upsampler.c	/^void upsampler(uint8_t *MCU_ds, uint8_t *MCU_us, u/
+usage	src/main.c	/^static void usage(char *progname) {$/
+value	include/jpeg.h	94
+version	include/jpeg.h	120
+width	include/jpeg.h	143
+window	include/jpeg.h	103
+xdensity	include/jpeg.h	122
+xthumbnail	include/jpeg.h	124
+ydensity	include/jpeg.h	123
+ythumbnail	include/jpeg.h	125
